@@ -5,18 +5,20 @@ body {
 }
 :root {
   --first-background-color: #e5e5e5;
-  --second-background-color: #ffffff;
-  --third-background-color: #2f303a;
-  --fourth-background-color: #f5f4fa;
+  --second-background-color: #2f303a;
+  --third-background-color: #f5f4fa;
   --alternative-font-family: "raleway";
-  --hover-focus-color: #2196f3;
   --alternative-color: #757575;
+  --logo-web-color: #2196f3;
+  --logo-main-color: #000000;
+  --main-color: #212121;
+  --secondary-color: #ffffff;
 }
 .navigation {
-  background-color: var(--second-background-color);
+  background-color: var(--secondary-color);
 }
 .main-web {
-  color: #2196f3;
+  color: var(--logo-web-color);
   font-weight: 700;
   font-family: var(--alternative-font-family);
   font-size: 26px;
@@ -24,7 +26,7 @@ body {
   text-decoration: none;
 }
 .mainlogo {
-  color: #000000;
+  color: var(--logo-main-color);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
@@ -33,10 +35,10 @@ body {
 }
 .mainlogo:hover,
 .mainlogo:focus {
-  color: var(--hover-focus-color);
+  color: var(--logo-web-color);
 }
 .link-header {
-  color: #212121;
+  color: var(--main-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
@@ -44,7 +46,7 @@ body {
 }
 .link-header:hover,
 .link-header:focus {
-  color: var(--hover-focus-color);
+  color: var(--logo-web-color);
 }
 .link-contact {
   color: var(--alternative-color);
@@ -55,23 +57,23 @@ body {
 }
 .link-contact:hover,
 .link-contact:focus {
-  color: var(--hover-focus-color);
+  color: var(--logo-web-color);
 }
 .main {
-  background-color: var(--second-background-color);
+  background-color: var(--secondary-color);
 }
 .main-page {
-  background-color: var(--third-background-color);
+  background-color: var(--second-background-color);
 }
 .main-heading {
-  color: #ffffff;
+  color: var(--secondary-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
 }
 .button-heading {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--logo-web-color);
+  color: var(--secondary-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -95,7 +97,7 @@ body {
   line-height: 1.17;
 }
 .ourteam {
-  background-color: var(--fourth-background-color);
+  background-color: var(--third-background-color);
 }
 .ourteam-headline {
   font-weight: 700;
@@ -113,10 +115,10 @@ body {
   line-height: 1.17;
 }
 .contact-information {
-  background-color: var(--third-background-color);
+  background-color: var(--second-background-color);
 }
 .footer-logo {
-  color: #ffffff;
+  color: var(--secondary-color);
   font-family: var(--alternative-font-family);
   font-weight: 700;
   font-size: 26px;
@@ -126,17 +128,17 @@ body {
 }
 .footer-logo:hover,
 .footer-logo:focus {
-  color: var(--hover-focus-color);
+  color: var(--logo-web-color);
 }
 .footer-web {
-  color: #2196f3;
+  color: var(--logo-web-color);
   font-family: var(--alternative-font-family);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
 }
 .footer-info {
-  color: #ffffff;
+  color: var(--secondary-color);
   text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
@@ -145,11 +147,11 @@ body {
 }
 .footer-info:hover,
 .footer-info:focus {
-  color: var(--hover-focus-color);
+  color: var(--logo-web-color);
 }
 .button-portfolio {
   font-weight: 500;
-  background-color: var(--fourth-background-color);
+  background-color: var(--third-background-color);
   font-size: 16px;
   line-height: 1.62;
   cursor: pointer;
@@ -160,8 +162,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  color: #ffffff;
-  background-color: var(--hover-focus-color);
+  color: var(--secondary-color);
+  background-color: var(--logo-web-color);
 }
 .subtitle {
   font-weight: 700;
